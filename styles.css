@@ -104,3 +104,40 @@ h1 {
     font-size: 18px;
     font-style: italic;
 }
+
+.email-form {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.email-form p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.email-form input {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.email-form button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.email-form button:hover {
+    background-color: gray;
+}
