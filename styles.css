@@ -5,6 +5,7 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 .page-container {
@@ -35,7 +36,9 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 20px; /* Space below the ribbon */
+    width: 100%; /* Ensures it stays within the middle column */
+    max-width: 800px;
+    margin: 0 auto 20px auto; /* Centers it and adds space below */
 }
 
 h1 {
