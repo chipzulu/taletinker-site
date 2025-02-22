@@ -23,7 +23,7 @@ body {
 .content {
     flex: 2;
     max-width: 800px;
-    padding: 20px;
+    padding: 0 20px 20px; /* Adjusted padding to prevent extra space above ribbon */
     text-align: center;
 }
 
@@ -35,12 +35,11 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    width: 100%; /* Ensures it stays within the middle column */
+    width: 100%;
     max-width: 800px;
     margin: 0 auto; /* Centers it */
     display: block;
     position: relative;
-    top: 0;
 }
 
 h1 {
