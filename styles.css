@@ -6,8 +6,6 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevents horizontal scrolling */
-    overflow-y: hidden; /* Ensures no vertical scrollbar unless necessary */
-    height: 100vh; /* Forces body to take full height */
 }
 
 .page-container {
@@ -15,7 +13,6 @@ body {
     justify-content: center;
     width: 100%;
     min-height: 100vh;
-    height: 100vh; /* Ensures full height */
 }
 
 .left-margin, .right-margin {
@@ -26,11 +23,8 @@ body {
 .content {
     flex: 2;
     max-width: 800px;
-    padding: 0 20px 20px; /* Adjusted padding to prevent extra space above ribbon */
+    padding: 20px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centers content vertically */
 }
 
 .ribbon {
@@ -43,15 +37,14 @@ body {
     text-align: center;
     width: 100%;
     max-width: 800px;
-    margin: 0 auto; /* Centers it */
+    margin: 0 auto 20px auto; /* Centers it and ensures spacing below */
     display: block;
-    position: relative;
 }
 
 h1 {
     font-size: 40px;
     text-transform: uppercase;
-    margin-top: 10px; /* Reduced margin for a seamless look */
+    margin-top: 0; /* Ensures the title is positioned correctly */
 }
 
 .subtitle {
