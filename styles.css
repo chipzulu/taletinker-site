@@ -62,3 +62,18 @@ h2 {
     padding: 10px;
     border-bottom: 1px solid white;
 }
+
+.ribbon {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
