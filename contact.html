@@ -16,25 +16,37 @@
 
             <div class="email-form">
                 <p>Get in touch! Leave your email and a message:</p>
-                <form action="https://formspree.io/f/xbldbqlw" method="POST" onsubmit="return validateRecaptcha()">
+                <form id="contactForm" action="https://formspree.io/f/xbldbqlw" method="POST" onsubmit="return validateRecaptcha()">
                     <input type="email" name="email" placeholder="Enter your email" required>
                     <textarea name="message" placeholder="Type your message here..." required></textarea>
-                    <div class="g-recaptcha" data-sitekey="6LdR7t8qAAAAAPKvqDiDKcVJ6pDeVxzc2kTX1x0F"></div> 
-                    <button type="submit">Submit</button>
+                    
+                    <!-- Initial Submit Button (Before reCAPTCHA Appears) -->
+                    <button type="button" id="showRecaptcha">Next</button>
+
+                    <!-- reCAPTCHA & Final Submit Button (Initially Hidden) -->
+                    <div id="recaptcha-container" style="display: none;">
+                        <div class="g-recaptcha" data-sitekey="6LdR7t8qAAAAAPKvqDiDKcVJ6pDeVxzc2kTX1x0F"></div>
+                        <button type="submit">Submit</button>
+                    </div>
                 </form>
                 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
             </div>
-            <script>
-                function validateRecaptcha() {
-                  var response = grecaptcha.getResponse();
-                  if(response.length == 0) {
-                      alert("Please verify you are not a robot by checking the reCAPTCHA box.");
-                      return false; // Prevent form submission
-                  }
-                  return true; // Allow form submission
-               }
-            </script>
 
+            <script>
+                document.getElementById('showRecaptcha').addEventListener('click', function() {
+                    document.getElementById('showRecaptcha').style.display = 'none'; // Hide initial button
+                    document.getElementById('recaptcha-container').style.display = 'block'; // Show reCAPTCHA & submit
+                });
+
+                function validateRecaptcha() {
+                    var response = grecaptcha.getResponse();
+                    if (response.length === 0) {
+                        alert("Please verify you are not a robot by checking the reCAPTCHA box.");
+                        return false; // Prevent form submission
+                    }
+                    return true; // Allow form submission
+                }
+            </script>
 
             <div class="nav">
                 <a href="index.html">Home</a>
@@ -44,3 +56,4 @@
     </div>
 </body>
 </html>
+

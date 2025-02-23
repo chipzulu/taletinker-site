@@ -5,24 +5,25 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-x: hidden;
 }
 
 .page-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     min-height: 100vh;
 }
 
 .left-margin, .right-margin {
     flex: 1;
-    background-color: black; /* Keeps the margins black */
+    background-color: black;
 }
 
 .content {
     flex: 2;
-    max-width: 800px;
+    max-width: 600px;
     padding: 20px;
     text-align: center;
 }
@@ -36,15 +37,15 @@ body {
     text-transform: uppercase;
     text-align: center;
     width: 100%;
-    max-width: 800px;
-    margin: 0 auto 20px auto; /* Centers it and ensures spacing below */
+    max-width: 600px;
+    margin: 0 auto 20px auto;
     display: block;
 }
 
 h1 {
     font-size: 40px;
     text-transform: uppercase;
-    margin-top: 0; /* Ensures the title is positioned correctly */
+    margin-top: 0;
 }
 
 .subtitle {
@@ -65,7 +66,7 @@ h1 {
 
 .email-form input,
 .email-form textarea {
-    width: 250px;
+    width: 100%;
     padding: 10px;
     border: 1px solid white;
     border-radius: 5px;
@@ -75,8 +76,9 @@ h1 {
     text-align: center;
     margin-bottom: 10px;
     display: block;
-    width: 100%;
     max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .email-form textarea {
@@ -93,6 +95,7 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s;
+    margin-top: 10px;
 }
 
 .email-form button:hover {
