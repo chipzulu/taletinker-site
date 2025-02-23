@@ -13,9 +13,10 @@
             <div class="ribbon">Taletinker</div>
             <h1>Contact</h1>
             <p class="subtitle"><em>Christian P. Koch</em></p>
+
             <div class="email-form">
                 <p>Get in touch! Leave your email and a message:</p>
-                <form action="https://formspree.io/f/xbldbqlw" method="POST">
+                <form action="https://formspree.io/f/xbldbqlw" method="POST" onsubmit="return validateRecaptcha()>
                     <input type="email" name="email" placeholder="Enter your email" required>
                     <textarea name="message" placeholder="Type your message here..." required></textarea>
                     <div class="g-recaptcha" data-sitekey="6LdR7t8qAAAAAPKvqDiDKcVJ6pDeVxzc2kTX1x0F"></div> 
@@ -23,6 +24,18 @@
                 </form>
                 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
             </div>
+            <script>
+                function validateRecaptcha() {
+                  var response = grecaptcha.getResponse();
+                  if(response.length == 0) {
+                      alert("Please verify you are not a robot by checking the reCAPTCHA box.");
+                      return false; // Prevent form submission
+                  }
+                  return true; // Allow form submission
+               }
+            </script>
+
+
             <div class="nav">
                 <a href="index.html">Home</a>
             </div>
