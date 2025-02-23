@@ -53,6 +53,52 @@ h1 {
     margin-top: 5px;
 }
 
+.email-form {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.email-form p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.email-form input,
+.email-form textarea {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+}
+
+.email-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.email-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.email-form button:hover {
+    background-color: gray;
+}
+
 .nav {
     margin-top: 30px;
 }
@@ -73,71 +119,4 @@ h1 {
     background-color: white;
     color: black;
     transform: scale(1.1);
-}
-
-.list {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-    padding: 20px;
-}
-
-.list-item {
-    font-size: 20px;
-    padding: 10px;
-    border-bottom: 1px solid white;
-}
-
-.quote {
-    font-size: 18px;
-    font-style: italic;
-    margin-top: 30px;
-    padding: 20px;
-}
-
-.quote-box {
-    border: 2px solid white;
-    padding: 20px;
-    margin: 20px auto;
-    width: 60%;
-    text-align: center;
-    font-size: 18px;
-    font-style: italic;
-}
-
-.email-form {
-    margin-top: 30px;
-    text-align: center;
-}
-
-.email-form p {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.email-form input {
-    width: 250px;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 5px;
-    background-color: black;
-    color: white;
-    font-size: 16px;
-    text-align: center;
-}
-
-.email-form button {
-    padding: 10px 20px;
-    margin-left: 10px;
-    font-size: 16px;
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.email-form button:hover {
-    background-color: gray;
 }
