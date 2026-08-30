@@ -1,43 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C.P.Koch - Author</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Official author website of C.P. Helweg — fiction, true stories, books and new work.">
+  <title>C.P. Helweg — Author</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="page-container">
-        <div class="left-margin"></div>
-        <div class="content">
-            <div class="ribbon">Taletinker</div>
-            <h1>C.P.Koch</h1>
-            <p class="subtitle">I write speculative fiction—short stories and novels that
-                              stretch genre, challenge narrative, and cut through to 
-                              something real.
-            </p>
-            <div class="nav">
-                <a href="bio.html">Bio</a>
-                <a href="short-stories.html">Short Stories</a>
-                <a href="whyiwrite.html">Why I Write</a>
-                <a href="novels.html">Novels</a>
-                <a href="contact.html">Contact</a>
-            </div>
-<p class="quote">
-Strunge gave me the pulse.  
-Vonnegut gave me the smirk.  
-Süskind, the atmosphere.  
-Irving gave me the weight of story.  
-And DFW…  
-DFW taught me how to fold meaning in on itself until it cracks—  
-and still somehow connect.
-</p>
-<p class="quote">
-Explore the books, follow the recursion,  
-and see what happens when fiction stares back.
-</p>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="C.P. Helweg home">C.P. HELWEG</a>
+    <nav class="top-nav" aria-label="Primary navigation">
+      <a href="#books">Books</a>
+      <a href="#about">About</a>
+      <a href="#why">Why I Write</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-photo-wrap">
+        <img class="hero-photo" src="assets/Gemini_Portrait1.png" alt="Black and white portrait of author C.P. Helweg">
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">Author · Storyteller</p>
+        <h1 id="hero-title">C.P.<br>HELWEG</h1>
+        <p class="hero-lede">I write stories that stretch genre, challenge narrative, and cut through to something real.</p>
+        <a class="text-link" href="#books">Explore the books <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="statement section-pad" aria-label="Writing statement">
+      <p class="statement-quote">“I don’t write because I have a story to tell. I write because I see something worth capturing.”</p>
+    </section>
+
+    <section class="books section-pad" id="books" aria-labelledby="books-title">
+      <div class="section-heading">
+        <p class="eyebrow">Published work</p>
+        <h2 id="books-title">Books</h2>
+      </div>
+
+      <article class="book-feature">
+        <a class="book-cover-link" href="to-ride-a-tempest.html" aria-label="Read about To Ride a Tempest">
+          <img class="book-cover" src="assets/to_ride_a_tempest_cover_kdp.jpg" alt="Cover of To Ride a Tempest by C.P. Helweg">
+        </a>
+        <div class="book-copy">
+          <p class="book-kicker">KDP Short Read · True Story</p>
+          <h3><a href="to-ride-a-tempest.html">To Ride a Tempest</a></h3>
+          <p>At seventeen, a cadet aboard a three-masted tall ship meets the North Atlantic at its worst. A true account of a four-day hurricane, the work aloft, and the strange clarity that arrives when the sea has stripped everything down to action.</p>
+          <div class="book-actions">
+            <a class="button" href="to-ride-a-tempest.html">About the book</a>
+            <span class="button button-muted" aria-label="Amazon purchase link coming soon">Amazon — coming soon</span>
+          </div>
         </div>
-        <div class="right-margin"></div>
+      </article>
+    </section>
+
+    <section class="about-grid section-pad" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="eyebrow">About the author</p>
+        <h2 id="about-title">At the edge of the map.</h2>
+      </div>
+      <div class="prose">
+        <p>C.P. Helweg writes across the line between lived experience and fiction, with an eye for the moment when ordinary reality becomes something sharper.</p>
+        <p>His life began moving early: Atlantic sailing as a teenager, later work aboard merchant ships in the Far East, a career in computer technology and software architecture, and service at sea as the commander of a Coast Guard patrol vessel.</p>
+        <p>Maritime experience and technology both find their way into the work. Whether the setting is a storm deck, a barren moon, or somewhere much harder to name, the aim is the same: make the reader stand inside it.</p>
+        <p class="pen-name-note">C.P. Helweg is the publishing name of Christian P. Koch.</p>
+      </div>
+    </section>
+
+    <section class="why section-pad" id="why" aria-labelledby="why-title">
+      <div class="section-heading">
+        <p class="eyebrow">Influences & instigators</p>
+        <h2 id="why-title">Why I Write</h2>
+      </div>
+      <div class="why-copy">
+        <p>I write fiction the way Michael Strunge wrote poetry—not for commentary, but for collision. Not for what a story should do, but for what it can make you feel in the gut.</p>
+        <p>Patrick Süskind gave me atmosphere. John Irving, the weight of story. Kurt Vonnegut, the smirk. David Foster Wallace showed me how meaning can fold in on itself and still connect.</p>
+        <p>But the heartbeat is Strunge: language that does not ask permission. It claims space.</p>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
+      <div class="section-heading">
+        <p class="eyebrow">Get in touch</p>
+        <h2 id="contact-title">Contact</h2>
+      </div>
+      <form class="contact-form" action="https://formspree.io/f/xbldbqlw" method="POST">
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="7" required></textarea>
+        </label>
+        <button class="button" type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="publisher-mark">
+      <img src="assets/TaletinkerLogo.png" alt="Taletinker Publishing House logo">
+      <div>
+        <strong>TALETINKER</strong>
+        <span>Publishing House</span>
+      </div>
     </div>
+    <p>© <span id="year">2026</span> C.P. Helweg</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
