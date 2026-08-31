@@ -1,4 +1,4 @@
-C.P. HELWEG / TALETINKER — LOCAL PREVIEW
+C.P. HELWEG / TALETINKER — BOOKS UPDATE
 
 Fastest preview on Windows:
 1. Unzip this folder anywhere.
@@ -12,16 +12,24 @@ Then open:
 
     http://localhost:8000/
 
-FILES
-- index.html                   New author homepage
-- to-ride-a-tempest.html       Dedicated book page
-- styles.css                   Shared styling
-- assets/                      Portrait, cover, Taletinker logo
-- CNAME                        Keeps www.taletinker.com when later published on GitHub Pages
-- bio.html etc.                Small redirects so old page links keep working after publication
+WHAT CHANGED
+- index.html now features both published Short Reads.
+- index.html contains a plain-text permanent book list linking to each individual book page.
+- books.html is a stable catalogue page for all books.
+- hikers-refuge-a-stone-in-the-shoe.html is the new individual book page.
+- The new book's Amazon button uses the clean permanent ASIN URL:
+      https://www.amazon.com/dp/B0HH9JJS8D
+- sitemap.xml and robots.txt were added so search engines can discover the stable book pages.
+- The existing To Ride a Tempest page remains intact.
 
-AMAZON BUTTON
-The To Ride a Tempest page already contains a commented example showing where the future Amazon URL goes.
+NEW COVER ART
+The KDP cover image for Hikers' Refuge: A Stone in the Shoe was not present in the supplied site files, so this preview deliberately uses a clean typographic title panel rather than inventing or hot-linking a cover.
+
+When you provide the actual KDP cover JPEG/PNG, replace the title panel with the real cover before publication.
+
+STABLE BOOK URLS
+https://www.taletinker.com/to-ride-a-tempest.html
+https://www.taletinker.com/hikers-refuge-a-stone-in-the-shoe.html
 
 CONTACT FORM
-The contact form preserves your existing Formspree endpoint. Submitting the form sends a real message through that service.
+The contact form preserves the existing Formspree endpoint.
