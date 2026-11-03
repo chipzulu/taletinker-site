@@ -775,9 +775,64 @@ img {
 .novel-cover-link { display:block; width:100%; max-width:410px; }
 .novel-cover { width:100%; height:auto; box-shadow:0 22px 48px rgba(0,0,0,.20); }
 .novel-copy h2 { margin:0 0 26px; font-size:clamp(3rem,6.5vw,6rem); font-weight:400; line-height:.98; letter-spacing:-.035em; }
-.novel-copy > p:not(.eyebrow):not(.release-status) { max-width:520px; font-size:1.25rem; }
+.novel-copy > p:not(.eyebrow):not(.release-status):not(.format-note) { max-width:520px; font-size:1.25rem; }
 .release-status { display:table; padding:7px 12px; border:1px solid var(--storm-dark); color:var(--storm-dark); font:700 .75rem/1.4 Arial,Helvetica,sans-serif; letter-spacing:.16em; text-transform:uppercase; }
 .tingsted-page .book-detail-copy h1 { font-size:clamp(2.8rem,6.5vw,6rem); line-height:1; }
 .tingsted-page .book-detail-cover, .catalog-cover img { height:auto; }
 @media(max-width:900px) { .novel-feature { grid-template-columns:1fr; gap:40px; } .novel-cover-link { max-width:390px; } }
 @media(max-width:650px) { .novel-cover-link { max-width:300px; } }
+
+/* The Tingsted Cipher retailer options (2026-11-03). */
+.format-note {
+  margin-top: 20px;
+  font: 0.83rem/1.6 Arial, Helvetica, sans-serif;
+  color: var(--muted);
+  letter-spacing: 0;
+}
+.edition-options {
+  margin-top: 34px;
+  border-top: 1px solid var(--line);
+}
+.edition-options > h2 {
+  margin: 25px 0 16px;
+  font-size: clamp(1.55rem, 3vw, 2rem);
+  font-weight: 400;
+  line-height: 1.2;
+}
+.edition-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 19px 0;
+  border-bottom: 1px solid var(--line);
+}
+.edition-row h3 {
+  margin: 0;
+  font-size: 1.12rem;
+  line-height: 1.4;
+  font-weight: normal;
+}
+.edition-row p {
+  margin: 2px 0 0;
+  font: 0.82rem/1.5 Arial, Helvetica, sans-serif;
+  color: var(--muted);
+}
+.edition-row .button {
+  flex-shrink: 0;
+  text-align: center;
+}
+.button-upcoming,
+.button-upcoming:disabled,
+.button-upcoming:hover,
+.button-upcoming:focus-visible {
+  background: var(--paper-deep);
+  color: var(--muted);
+  border-color: var(--line);
+  cursor: not-allowed;
+  opacity: 1;
+}
+@media (max-width: 650px) {
+  .edition-row { align-items: stretch; flex-direction: column; gap: 12px; }
+  .edition-row .button { align-self: flex-start; }
+}
