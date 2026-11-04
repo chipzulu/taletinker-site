@@ -1,4 +1,4 @@
-/* Taletinker static-site cache refresh (v3.3).
+/* Taletinker static-site cache refresh (v3.4).
  * Checks only on page visit (and when a page is restored from back/forward cache).
  * Requires a matching <meta name="site-version"> in the HTML and site-version.json.
  */

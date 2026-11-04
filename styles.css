@@ -295,14 +295,6 @@ img {
   margin-top: 0;
 }
 
-.pen-name-note {
-  margin-top: 34px;
-  padding-top: 24px;
-  border-top: 1px solid var(--line);
-  font-size: 0.95rem;
-  color: var(--muted);
-  font-style: italic;
-}
 
 .why {
   background: var(--paper-deep);
