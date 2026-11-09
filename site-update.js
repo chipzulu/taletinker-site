@@ -1,4 +1,4 @@
-/* Taletinker static-site cache refresh (v3.4).
+/* Taletinker static-site cache refresh (v3.7).
  * Checks only on page visit (and when a page is restored from back/forward cache).
  * Requires a matching <meta name="site-version"> in the HTML and site-version.json.
  */
@@ -14,7 +14,7 @@
   if (!versionElement) return;
   const currentVersion = versionElement.content.trim();
 
-  // Monotonic dotted numeric versions: 3.3, 3.4, 3.10, 4.0, etc.
+  // Monotonic dotted numeric versions: 3.3, 3.7, 3.10, 4.0, etc.
   // An older manifest must never roll a visitor back to an earlier page.
   function compareVersions(a, b) {
     const pattern = /^\d+(?:\.\d+)*$/;
