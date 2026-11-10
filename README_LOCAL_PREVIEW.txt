@@ -1,4 +1,4 @@
-TALETINKER / C.P. HELWEG — LOCAL PREVIEW & DEPLOYMENT (V3.7)
+TALETINKER / C.P. HELWEG — LOCAL PREVIEW & DEPLOYMENT (V3.8)
 
 Extract the ZIP. To preview YouTube playback, open a terminal in the extracted folder,
 run py -m http.server 8000 --bind 127.0.0.1 and visit http://127.0.0.1:8000/.
@@ -31,10 +31,10 @@ IMPORTANT LIMITATIONS
 - The checker runs on page visits; it does not interrupt someone actively
   reading a page or composing a contact message.
 
-NEXT WEBSITE RELEASE (e.g., 3.8)
-- Increase the version in site-version.json (e.g., "3.8").
-- Change <meta name="site-version" content="3.7"> to 3.8 in every real HTML page.
-- Change ?v=3.7 to ?v=3.8 in CSS, image and site-update.js references.
+NEXT WEBSITE RELEASE (e.g., 3.9)
+- Increase the version in site-version.json (e.g., "3.9").
+- Change <meta name="site-version" content="3.8"> to 3.9 in every real HTML page.
+- Change ?v=3.8 to ?v=3.9 in CSS, image and site-update.js references.
 - If you change site-update.js, also update its ?v= reference accordingly.
 - Keep the canonical URLs and book-page filenames unchanged for search engines.
 - Test locally, commit and push when ready.
@@ -44,7 +44,7 @@ Copy/merge these files into your local Git Homepage directory, leaving .git
 untouched, then:
   git status
   git add .
-  git commit -m "Publish C.P. Helweg identity-only site V3.7"
+  git commit -m "Publish C.P. Helweg identity-only site V3.8"
   git push
 
 Your existing short-read Amazon links and all novel links are preserved.
