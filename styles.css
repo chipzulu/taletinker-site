@@ -829,7 +829,6 @@ img {
   .edition-row .button { align-self: flex-start; }
 }
 
-#cover-film { width: min(90vw, 52rem); padding: 0; border: 0; text-align: center; }
-#cover-film::backdrop { background: rgb(0 0 0 / 78%); }
-#cover-film iframe { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; min-height: 200px; border: 0; }
-#cover-film .button { margin: .8rem; }
+
+.book-trailer { margin: 3rem auto 0; text-align: center; }
+.book-trailer iframe { display: block; width: min(100%, 360px); height: auto; aspect-ratio: 9 / 16; border: 0; margin: 1.5rem auto; }
