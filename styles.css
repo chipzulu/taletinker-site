@@ -832,3 +832,8 @@ img {
 
 .book-trailer { margin: 3rem auto 0; text-align: center; }
 .book-trailer iframe { display: block; width: min(100%, 360px); height: auto; aspect-ratio: 9 / 16; border: 0; margin: 1.5rem auto; }
+
+.amazon-store { margin: 1.25rem 0; }
+.amazon-store label { display: block; margin-bottom: .5rem; font-weight: 600; }
+.amazon-store select { max-width: 100%; padding: .65rem .8rem; font: inherit; color: inherit; background: transparent; border: 1px solid currentColor; border-radius: 3px; }
+.amazon-store p { font-size: .85rem; margin: .6rem 0; }
