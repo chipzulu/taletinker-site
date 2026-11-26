@@ -837,3 +837,5 @@ img {
 .amazon-store label { display: block; margin-bottom: .5rem; font-weight: 600; }
 .amazon-store select { max-width: 100%; padding: .65rem .8rem; font: inherit; color: inherit; background: transparent; border: 1px solid currentColor; border-radius: 3px; }
 .amazon-store p { font-size: .85rem; margin: .6rem 0; }
+
+.sidecar-cover { aspect-ratio: auto; height: auto; }
